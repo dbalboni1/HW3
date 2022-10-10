@@ -1,0 +1,268 @@
+<!--
+    Dan Balboni
+    CPSC 332 Web Development
+    9/22/2022
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dan Balboni Resume</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <style>
+            .navHead {
+                justify-content: center; 
+                display: flex;
+            }
+            .button {
+                background-color: #96D4D4;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 15px;
+                border: transparent;
+                box-shadow: 0 12px 12px -6px rgba(black, .5);
+                text-decoration: none;
+                color:black;
+                transform: scale(1);
+                transition: transform ease-in-out 250ms box-shadow ease-in-out 250ms;
+            }
+            .button:hover {
+                transform: scale(1.25);
+                box-shadow: 0 12px 12px -6px rgba(black, .5);
+                color:rgb(9, 63, 129);
+            }
+            body, html {
+                background-color: rgb(0, 0, 67);
+                min-width: 500px;
+            }
+            .content-body {
+                background-color: white;
+                border-radius: 10px;
+                margin: 2%;
+                padding: 2%;
+                padding-right: 4%;
+                min-width: 600px;
+                position:relative;
+            }
+            .content-wrapper {
+                display: flex;
+            }
+            .content {
+                background-color: #96D4D4;
+                border-radius: 10px;
+                padding: 15px;
+                flex: auto;
+                min-width: auto;
+            }
+            table, th, td {
+                text-align: center;
+                border: 1px solid black;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .left-box {
+                position:relative;
+                height:max-content;
+                min-width: max-content;
+                width: 220px;
+                padding: 2%;
+            }
+            .left-content {
+                background-color: #96D4D4;
+                border-radius: 10px;
+                padding: 15px;
+                flex: auto;
+                width: inherit;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content-body">
+
+            <div class="navHead">
+                <a class="button" href="#Job"><h2>Career</h2></a>
+
+                <a class="button" href="#Education"><h2>Education</h2></a>
+
+                <a class="button" href="#Hobbies"><h2>Hobbies</h2></a>
+            </div>
+
+            <div class="flex-container">
+                <div class="left-box">
+                    <img src="Resume-Photo.jfif" height="250" alt="Resume Photo">
+                    
+                    <h1 style="text-align:center">
+                        <strong>Dan  Balboni</strong>
+                    </h1>
+
+                    <div class="left-content">
+                        <p>
+                            <strong> About </strong> <br><br>
+                            Computer Science Major looking to leverage 
+                            skills in UI/UX design and software development.
+                            The type of person to identify a problem and solve it.
+                            A strong interdisciplinary communicator with an eye for design and a curious mind who can work well both in teams and independently.
+                        </p>
+                    </div>
+
+                    <br>
+
+                    <div class="left-content">
+                        <br>
+                        <strong> Skills </strong>
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <li>Graphic Design</li>
+                            <li>Social Media Marketing</li>
+                            <li>Initiative</li>
+                            <li>Communication</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    <h1 id="Job">Job History</h1>
+                    <table>              
+                        <thead>
+                            <tr>
+                                <th>
+                                    Position
+                                </th>
+                
+                                <th>
+                                    Employer
+                                </th>
+                
+                                <th>
+                                    Dates
+                                </th>
+                            </tr>
+                        </thead>
+                
+                        <tr>
+                            <td>Sales Associate</td>
+                            <td>Boy Scouts of America Santa Clara</td>
+                            <td>May 2019 - January 2020</td>
+                        </tr>
+
+                        <tr>
+                            <td>Software Development Intern</td>
+                            <td>NASA Ames Research Center</td>
+                            <td>May 2021 - December 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cofounder/Production Manager</td>
+                            <td>Goon Printing Company</td>
+                            <td>August 2021 - current</td>
+                        </tr>
+                
+                    </table>
+            
+                    <h1 id="Education">Education</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Classes
+                                </th>
+                
+                                <th>
+                                    Electives
+                                </th>
+                            </tr>
+                        </thead>
+                
+                        <tr>
+                            <td>Operating Systems</td>
+                            <td>UI/UX Design</td>
+                        </tr>
+                        <tr>
+                            <td>Database Management</td>
+                            <td>Web Development</td>
+                        </tr>
+                        <tr>
+                            <td>Software Development</td>
+                            <td>Android App Development</td>
+                        </tr>
+                        <tr>
+                            <td>Algorithms & Data Structures</td>
+                            <td>Natural Language Processing</td>
+                        </tr>
+            
+            
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"> 
+                                    BS in Computer Science with an emphasis on UI/UX, web development and app development
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                
+                    <br>
+                
+                    <h1>Skills</h1>
+                    <table>       
+                        <thead>
+                            <tr>
+                                <th>
+                                    Computer Languages
+                                </th>
+                                <th>
+                                    Hard Skills
+                                </th>
+                                <th>
+                                    Soft Skills
+                                </th>
+                            </tr>
+                        </thead>
+                
+                        <tr>
+                            <td>Java</td>
+                            <td>Linux Command Line</td>
+                            <td>Initiative</td>
+                        </tr>
+                        <tr>
+                            <td>html/css</td>
+                            <td>UI/UX Design</td>
+                            <td>Communication</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Photo Editing</td>
+                            <td>Creative Problem Solving</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Social Media Marketing</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Graphic Design</td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <h2>Hobbies</h2>
+                    <ol>
+                        <a href="https://www.instagram.com/goon.zaga/">
+                            <li><img src="Goon Logo.png" height="100" alt="Logo"></li>
+                        </a>
+                        <li>Photo Editing/Photoshop</li>
+                        <li>Breathing</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
